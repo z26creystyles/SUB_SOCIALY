@@ -76,11 +76,16 @@
     </div>
 
     <script>
+        const input = document.getElementById('taskbar');
+        const button = document.getElementById('clickme');
 
-        const input= document.getElementById('task');
-        const button= document.getElementById('clickme');
-        
-
+        function myfunction() {
+            if (input.value.trim()) {
+                const taskText = input.value;
+                console.log('Task added:', taskText);
+                input.value = '';
+            }
+        }
     </script>
 </body>
 </html>

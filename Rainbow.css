@@ -6,6 +6,10 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  background: linear-gradient(to right, #ff4b2b, plum);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -88,15 +92,6 @@
 
 
 
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    margin:0;
-    background: linear-gradient(to right, #ff4b2b, plum);
-}
 
 /* MAIN CONTAINER */
 .container {
@@ -264,12 +259,11 @@ button.ghost {
 }
 
 
-.card-colio {
-  display:flex;
+.card-Colio {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    
 }
 
 .parent_cont {
@@ -310,8 +304,7 @@ button.ghost {
   border-bottom-right-radius: 45px;
 }
 
-@media  screen and
-(min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-links{
     position: absolute;
 top: 70px;
