@@ -8,6 +8,10 @@
 
 body {
   background: linear-gradient(to right, #ff4b2b, plum);
+  margin:0;
+  max-width:100%;
+  height:auto;
+  justify-content: center;                     
 }
 
 .navbar {
@@ -234,75 +238,50 @@ button.ghost {
     margin-left: 50%;
 }
 
-.main {
+.parent_cont {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin-inline-end: 2px;
-  margin-top: 10px;
-  padding-top: 15px;
+  flex-direction: row;
+  width:100%;
+  margin:0;
+  position: relative;  
+  justify-items: center;
+
+}
+ .card-Colio{
+  box-shadow: #fff;
+  width:100%;
+  height:300px;
+  justify-items: center;
+  justify-content: center;
+  gap:20px;
+  margin:0;
+  position:relative;
+  flex:0.1 auto;
+   
+ }
+  
+.pimg{
+  width:200px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  height:150px;
+  border-top-left-radius: 50px;
 }
 
-.footer {
-  text-align: center;
-  text-decoration: plum;
-  margin-top: 30px;
-  padding-top:15px;
-  padding-left: 19px;
-  font-size: 17px;
-  background: linear-gradient(to left, #ff4b2b, plum);
-  position: sticky;
-  margin-top: 40px;
-  top: 100vh;
-}
 
-
-.card-Colio {
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.parent_cont {
-   
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 55px;
-}
 
-.cool {
-  text-align: center;
-  
-  
-}
-
-
-.ghost{
-  background: transparent;
-    border-color: #fff;
-    color:black;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-
-
-.h {
-  margin-top: 30px;
-}
-
-
-.pimg{
-  border-top-left-radius: 45px;
-  border-bottom-right-radius: 45px;
-}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-links{
@@ -330,12 +309,7 @@ display: none;
   .buddy{
     grid-template-columns: 1fr;
   }
-  .pimp {
-    font-size: 15px;
-    padding: 10px;
-    margin: auto;
-    max-width: 900px;
-  }
+  
   .main22 {
     max-width: 900px;
     font-size: 18px;
@@ -394,5 +368,17 @@ display: none;
   text-align: center;
   line-height: 2.8;
   font-size: 15px;
-  padding:10px;
+}
+
+
+footer {
+  text-align: center;
+  text-decoration: plum;
+  margin-top: 30px;
+  padding-top:15px;
+  font-size: 17px;
+  background: linear-gradient(to left, #ff4b2b, plum);
+  position: sticky;
+  margin-top: 40px;
+  top: 100vh;
 }
